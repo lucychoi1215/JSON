@@ -131,6 +131,8 @@ html, body {
 }
 
 #about, #specialDraw{
+  display: flex;
+  flex-direction: column;
   background-color: #2f5f41;
   font-family: 'Roboto Slab';
   line-height: 1.5em;
@@ -138,6 +140,12 @@ html, body {
   width: 80vmin;
   padding: 6vmin 6vmin 6vmin 6vmin;
   animation: aboutAppear 2s ease-in-out;
+  width: 40vw;
+  height: 70vh;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   }
 
   p + p {
@@ -258,6 +266,11 @@ html, body {
 #all {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
