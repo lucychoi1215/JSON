@@ -18,6 +18,11 @@ let flowercontainer = document.getElementsByClassName("flower");
 
 let popularFlowers= [
   {
+    "des" : "Sweet Peas top the list as the April birth month flower. Sweet peas are associated with bliss, pleasure and delicacy. They make for a lovely addition to spring bouquets, adding movement and color.",
+    "backCol" : "#2f5f41",
+    "img" : "https://res.cloudinary.com/hardtofind/image/upload/c_pad,h_600,w_600/cs_srgb,f_auto,fl_lossy/v1/product_image/vb7uekfafi9t3b2tnbp9"
+  },
+  {
     "des" : "It’s difficult to think of flowers that are more quintessential examples of spring than Tulips. These beautiful blooms are available starting in March and come in a veritable rainbow of colors.",
     "backCol" : "#2f5f41",
     "img" : "https://farmflorist.com/wp-content/uploads/2019/07/Silvia-carnation-bouquet-by-farm-florist.jpg",
@@ -35,6 +40,12 @@ let popularFlowers= [
 ]
 
 let jsonDatabase= [
+  {
+    "name" : "Alstroemeria",
+    "image" : "https://i.etsystatic.com/10592317/r/il/a44607/1227991945/il_570xN.1227991945_qllf.jpg",
+    "occasion": "New Years",
+    "message": "Wealth, prosperity and fortune",
+  },
   {
     "name" : "Amaryllis",
     "image" : "https://s7e5a.scene7.com/is/image/waitrose/474522_is_1?id=_prRr0&fmt=jpg&fit=constrain,1&wid=890&hei=890",
@@ -159,9 +170,9 @@ function flowerInfoGrid(incomingJSON) {
 
   flowerGridElement.appendChild(newContentElement);
 
-newContentElement.addEventListener('click' , function(myEvent) {
-  myEvent.target.style.border = "0.5vmin solid #2f5f41";
-});
+  newContentElement.addEventListener('click' , function(myEvent) {
+    myEvent.currentTarget.style.border = "0.5vmin solid #2f5f41";
+  });
 
 }
 
